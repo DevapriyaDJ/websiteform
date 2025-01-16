@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign-Up Form</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="designing" name="interests" value="designing">
+            <label for="designing">Designing</label>
+            <input type="checkbox" id="developer" name="interests" value="developer">
+            <label for="developer">Developer</label>
+            
+            <label>Newsletter:</label>
+            <input type="radio" id="subscribe" name="newsletter" value="subscribe" checked>
+            <label for="subscribe">Subscribe</label>
+            <input type="radio" id="unsubscribe" name="newsletter" value="unsubscribe">
+            <label for="unsubscribe">Unsubscribe</label>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="thankYouMessage" style="display:none;">Thank you for signing up!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
